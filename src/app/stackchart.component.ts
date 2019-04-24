@@ -65,10 +65,10 @@ export class StackchartComponent implements OnInit {
           label:{backgroundColor:'#6a7985'}
         }
       },
-       title: {
-        left: 'center',
-        text: 'Stack Chart',
-    },
+    //    title: {
+    //     left: 'center',
+    //     text: 'Stack Chart',
+    // },
        legend:{data:this.legends},
         grid: {
         left: '10%',

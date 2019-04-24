@@ -1,12 +1,11 @@
-import { Component, Input, OnInit, OnDestroy, ElementRef } from '@angular/core';
+import { Component, Input, OnInit, ElementRef } from '@angular/core';
 
 import * as echarts from "echarts";
 // var echarts = require('echarts')
-import ECharts = echarts.ECharts;
-import EChartsOption = echarts.EChartOption;
+
 import $ from 'jquery';
 @Component({
-  selector: 'hello',
+  selector: 'stack-chart',
   template: `<div class="mGraph-wrapper">
   <div class="mGraph" id="mGraph_sale"></div>
 </div>`,
@@ -26,7 +25,7 @@ import $ from 'jquery';
     overflow: hidden;
   }`]
 })
-export class HelloComponent implements OnInit {
+export class StackchartComponent implements OnInit {
   // data Structure for Series
    data=[{
     legend:"Marketing",

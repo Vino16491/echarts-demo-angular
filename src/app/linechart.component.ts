@@ -53,10 +53,15 @@ data = [Math.random() * 300];
     toolbox: {
         feature: {
             dataZoom: {
+                title:'zoom',
                 yAxisIndex: 'none'
             },
-            restore: {},
-            saveAsImage: {}
+            restore: {
+              title:'restore'
+            },
+            saveAsImage: {
+              title:'save'
+            }
         }
     },
     xAxis: {
